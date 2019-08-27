@@ -33,7 +33,6 @@ class SongsController < ApplicationController
       @song.save
       redirect_to song_path(@song)
     else
-      @song.errors[:base]
       render :edit
     end
   end
