@@ -29,6 +29,7 @@ class SongsController < ApplicationController
   def update
     @song = Song.find(params[:id])
     @song = Song.update(song_params)
+    raise params
 
     if @song.valid?
       @song.save
