@@ -31,7 +31,7 @@ class SongsController < ApplicationController
 
     if @song.valid?
       @song.save
-      redirect_to song_path(@song)
+      redirect song_path(@song)
     else
       render :edit
     end
