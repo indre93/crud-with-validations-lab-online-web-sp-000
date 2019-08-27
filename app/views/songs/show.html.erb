@@ -1,0 +1,7 @@
+<h1><%= @song.title %></h1>
+  Artist: <%= @song.artist_name %><br>
+  Genre: <%= @song.genre %><br>
+  Year Released: <%= @song.release_year %><br>
+
+<br>
+<%= button_to "Edit Song", edit_song_path, :method => :patch %>

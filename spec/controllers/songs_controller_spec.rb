@@ -89,7 +89,7 @@ RSpec.describe SongsController, type: :controller do
   end
 
   context "updating a song with invalid data" do
-    let(:song) { Song.create!(valid_attributes) }
+    let(:song) { Song.create(valid_attributes) }
     before do
       patch :update, params: { id: song.id, song: invalid_attributes }
     end
